@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!--Remotes-->
+    <remote name="neoteric-pp-devices"  fetch="ssh://git@github.com/neoteric-pp-devices"/>
+    <remote name="neoteric-pp-codeberg" fetch="ssh://git@codeberg.org/neoteric-pp"/>
+
+    <project name="android_device_xiaomi_fuxi" path="device/xiaomi/fuxi" remote="neoteric-pp-devices" revision="bka" />
+    <project name="android_device_xiaomi_fuxi-kernel" path="device/xiaomi/fuxi-kernel" remote="neoteric-pp-devices" revision="bka" clone-depth="1" />
+    <project name="android_device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="neoteric-pp-devices" revision="bka" />
+
+    <project name="proprietary_vendor_xiaomi_fuxi" path="vendor/xiaomi/fuxi" remote="neoteric-pp-codeberg" revision="bka" clone-depth="1" />
+
+    <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="neoteric-pp-devices" revision="bka" />
+
+    <project name="android_vendor_qcom_opensource_arpal-lx" path="hardware/qcom-caf/sm8550/audio/pal" remote="neoteric" revision="vic-8550" />
+    <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8550/audio/primary-hal" remote="neoteric" revision="vic-8550" />
+    <project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm8550/display" remote="neoteric" revision="vic-8550" />
+    <project name="aospa/android_hardware_qcom_gps" path="hardware/qcom-caf/sm8550/gps" remote="aospa" revision="vauxite-8550" />
+    <project name="android_hardware_qcom_media" path="hardware/qcom-caf/sm8550/media" remote="neoteric" revision="vic-8550" />
+
+</manifest>
